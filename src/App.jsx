@@ -1,10 +1,13 @@
 import { Route, Routes } from 'react-router-dom'
+
+import MainPage from './pages/main/main.page'
+
 import './App.css'
 
 const App = () => {
 
   return <Routes>
-            <Route />
+            <Route path='/' element={<MainPage />} />
         </Routes>
 }
 

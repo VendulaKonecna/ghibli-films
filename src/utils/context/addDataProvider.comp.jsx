@@ -1,6 +1,6 @@
 
 import { useQuery } from '@tanstack/react-query';
-import AppDataContext from './addDataContext';
+import AddDataContext from './addDataContext';
 
 const loadData = async () => {
     const films = await fetch ('https://ghibliapi.vercel.app/films')
@@ -9,7 +9,7 @@ const loadData = async () => {
     return { films }
 }
 
-const AppDataProvider = ({ children }) => {
+const AddDataProvider = ({ children }) => {
     const {data: appData, isPending, isError } = useQuery({
         queryKey: ["filmData"],
         queryFn: loadData,
@@ -24,10 +24,10 @@ const AppDataProvider = ({ children }) => {
     }
 
     return (
-        <AppDataContext.Provider value={{ appData }}>
+        <AddDataContext.Provider value={{ appData }}>
             {children}
-        </AppDataContext.Provider>
+        </AddDataContext.Provider>
     )
 }
 
-export default AppDataProvider
+export default AddDataProvider

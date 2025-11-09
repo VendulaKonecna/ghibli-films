@@ -23,6 +23,7 @@ const MainPage = () => {
                         Jméno Ghibli pochází z italské přezdívky pro saharská průzkumná letadla z druhé světové války, původně z arabského výrazu ghibli (v italštině sirocco, jiný výraz pro horký vítr vanoucí Saharou). Jeho japonská výslovnost je však /džibri/ nebo /džiburi/. Podle jedné domněnky za jménem stojí úmysl zakladatelů do světa anime vnést nový vítr; jeden ze zakladatelů, Hajao Mijazaki, je známým milovníkem létání a italskému letectvu také později věnoval film Porco Rosso. Logem Studia Ghibli je Totoro, postava z filmu Můj soused Totoro.
                     </p>
                 </Article>
+                <img src="./totoro-logo.png" alt="totoro logo" />
                 <Button onClick={() => navigate('/films')}> Seznam filmů </Button>
             </MainSection >
             <Footer />

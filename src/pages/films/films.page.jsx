@@ -38,6 +38,7 @@ if (!delayedData || !delayedData.films) {
                 {delayedData.films.map((film) => (
                 <FilmCard
                     key={film.id}
+                    id={film.id}
                     title={film.title}
                     image={film.image}
                 />

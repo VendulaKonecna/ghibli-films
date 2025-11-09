@@ -40,7 +40,7 @@
 import { useNavigate } from "react-router-dom"
 import Button from "../Button/Button"
 
-import './FilmCardDetail.css'
+
 
 
 
@@ -50,7 +50,7 @@ const FilmCardDetail = ({ title, original_title, original_title_romanised, image
 
     return (
         <>
-            <main className="film-card">
+            <main className="film-card-detail">
                 <div className="film-header">
                     <h2 className="film-title">{title}</h2>
                     <h3 className="film-original-title">{original_title}</h3>

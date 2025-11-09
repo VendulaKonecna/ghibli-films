@@ -6,6 +6,8 @@ import Section from "../../components/Section/MainSection"
 import AppDataContext from "../../utils/context/addDataContext"
 import { useParams } from "react-router-dom"
 
+import './filmDetail.page.css'
+
 const FilmDetailPage = () => {
     const { id } = useParams()
     const { appData } = useContext(AppDataContext)

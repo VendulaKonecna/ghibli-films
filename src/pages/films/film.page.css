@@ -1,0 +1,42 @@
+.film-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.film-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.film-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.film-card__image {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.film-card__title {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #109CEB;
+}
+
+.films-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}

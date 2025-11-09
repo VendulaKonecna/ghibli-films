@@ -6,6 +6,8 @@ import FilmCard from "../../components/FilmCard/FilmCard"
 import Footer from "../../components/Footer/Footer"
 import { PuffLoader } from "react-spinners"
 
+import './film.page.css'
+
 const FilmsPage = () => {
 const { appData } = useContext(AppDataContext);
 const [delayedData, setDelayedData] = useState(null)
@@ -34,7 +36,7 @@ if (!delayedData || !delayedData.films) {
         <>
             <Header />
             <Section>
-                <main className="films-grid">
+                <main className="films-list">
                 {delayedData.films.map((film) => (
                 <FilmCard
                     key={film.id}

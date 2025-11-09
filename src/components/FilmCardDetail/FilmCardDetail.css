@@ -1,0 +1,88 @@
+.film-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.film-header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.film-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.film-original-title {
+  font-size: 1.5rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.film-romanised-title {
+  font-style: italic;
+  color: #999;
+}
+
+.film-details {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.film-img {
+  flex: 1 1 300px;
+  max-width: 300px;
+}
+
+.film-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.film-info {
+  flex: 2 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.film-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.film-meta {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.film-credits,
+.film-release {
+  flex: 1 1 200px;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.value {
+  margin-bottom: 1rem;
+}
+
+.movie-runtime {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.runtime-icon {
+  width: 20px;
+  height: 20px;
+}

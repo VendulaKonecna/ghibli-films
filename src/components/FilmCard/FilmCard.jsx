@@ -8,7 +8,7 @@ const FilmCard = ({ id, title, image }) => {
         <h3 className="film-card__title">{title}</h3>
       </div>
     </NavLink>
-  );
-};
+  )
+}
 
 export default FilmCard

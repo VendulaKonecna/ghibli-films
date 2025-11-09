@@ -12,7 +12,7 @@ const { appData } = useContext(AppDataContext)
     return <div>Data nejsou dostupná.</div>;
   }
 
-
+console.log(appData)
     return (
         <>
             <Header />
